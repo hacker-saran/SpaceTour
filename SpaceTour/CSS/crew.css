@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../Images/background-crew-desktop.jpg);
+    color: #FFFFFF;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/* Navbar  */
+
+
+.navbar {
+    position: relative;
+    padding-top: 50px;
+    height: 80px;
+}
+.navbar .logo {
+    padding:  15px 80px 10px;
+    display: inline-block;
+    position: absolute;
+}
+
+.navbar .nav {
+    position: absolute;
+    right: 0;
+    height: 90px;
+    width: 55rem;
+    backdrop-filter: blur(50px);
+    background-color: rgba(255,255,255,0.05);
+    text-align: center;
+}
+hr {
+    position: absolute;
+    width: 30%;
+    height: 0;
+    margin-left: 12rem;
+    margin-top: 41px;
+    opacity: 0.5;
+}
+
+
+.navsto {
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 100px;
+    margin-right: 9rem;
+}
+.navbar a {
+    text-decoration: none;
+    position: relative;
+    color: #FFFFFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 250;
+    letter-spacing: 3.25px ;
+    margin-left: 50px;  
+    padding-bottom: 38px;
+}
+
+.nav #crew{
+    border-bottom: solid #FFFFFF;
+    pointer-events: none;
+}
+
+.navbar a:after {
+    content: '';
+    position: absolute;
+    background-color: #FFFFFF;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom:0px;
+}
+
+.navbar a:hover:after {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.navbar span {
+    padding-right: 7px;
+    font-weight: bold;
+}
+
+.content {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.content .left {
+    width: 35%;
+    margin-left: 11rem;
+    height: 90vh;
+}
+
+.subhead {
+    color: #FFFFFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 5px ;
+}
+
+.subhead span {
+    color:grey;
+    font-weight: bold;
+}
+
+.right img{
+    margin-left: 8rem;
+}
+
+.left .type {
+    color: gray;
+    font-family: 'Bellefair', sans-serif;
+    font-style: normal;
+    font-size: 2rem;
+    margin-top: 7rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.left .name {
+    font-family: 'Bellefair', sans-serif;
+    font-size: 2.9rem;
+    font-weight: 200;
+    margin-top: 0;
+}
+
+.left .about{
+    font-size: 1rem;
+    color: #D0D6F9;
+    font-weight: 100;
+    line-height: 2;
+    font-family: "Gill Sans", sans-serif;
+    letter-spacing: 2px;
+}
+
+.left .innav {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+}
+
+ .slide{
+    display: inline-block;
+    text-decoration: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: #858585;
+    margin-right: 30px;
+}
+
+.slide a {
+    cursor: pointer;
+    opacity: 0;
+    margin-left: 4px;
+    font-size: 15px;
+}
+
+.slide:hover {
+    background-color: #FFFFFF ;
+}
+
+#active {
+    background-color: #FFFFFF;
+}
+
+

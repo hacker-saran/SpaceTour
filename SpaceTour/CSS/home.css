@@ -1,0 +1,167 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../Images/background-home-desktop.jpg);
+    color: #FFFFFF;
+}
+
+/* Navbar  */
+
+.navbar {
+    position: relative;
+    padding-top: 50px;
+    height: 80px;
+}
+.navbar .logo {
+    padding:  15px 80px 10px;
+    display: inline-block;
+    position: absolute;
+}
+
+.navbar .nav {
+    position: absolute;
+    right: 0;
+    height: 90px;
+    width: 55rem;
+    backdrop-filter: blur(50px);
+    background-color: rgba(255,255,255,0.05);
+    text-align: center;
+}
+hr {
+    position: absolute;
+    width: 30%;
+    height: 0;
+    margin-left: 12rem;
+    margin-top: 41px;
+    opacity: 0.5;
+}
+
+
+.navsto {
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 100px;
+    margin-right: 9rem;
+}
+.navbar a {
+    text-decoration: none;
+    position: relative;
+    color: #FFFFFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 250;
+    letter-spacing: 3.25px ;
+    margin-left: 50px;  
+    padding-bottom: 38px;
+    /* padding: 2px; */
+}
+
+.nav #active {
+    border-bottom: solid #FFFFFF;
+    pointer-events: none;
+}
+
+a:after {
+    content: '';
+    position: absolute;
+    background-color: #FFFFFF;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom:0px;
+}
+
+a:hover:after {
+    width: 100%;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+.navbar span {
+    padding-right: 7px;
+    font-weight: bold;
+}
+
+/* Heading   */
+
+.content {
+    margin-left: 12rem;
+    margin-top:80px;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content .para .head1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    letter-spacing: 3.2px;
+    font-weight: 300;
+    color: #D0D6F9;
+}
+
+.content .para .head2 {
+    color: #FFFFFF;
+    width: 100%;
+    letter-spacing: 5;
+    font-size: 150px;
+}
+
+.content .para {
+    height: fit-content;
+    width: 400px;  
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 2; 
+    line-height: 30px;
+    margin-top: 100px;
+}
+
+.content p{
+    color: #D0D6F9;
+    font-family: 'Bellefair',serif;
+    font-size: 18px;
+}
+
+
+.btn {
+    position: relative;
+    margin-right: 200px;
+    margin-top: 17%;
+    
+}
+
+.btn button {
+    width: 230px;
+    height: 230px;
+    border-radius: 50rem;
+    font-size: 32px;
+    font-family: 'Bellefair',serif;
+    letter-spacing: 0.3rem;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    animation: pulse 1s;
+    box-shadow: 0 0 1px 2.5em rgba(255,255,255,0.15) ;
+    
+}
+    
+@keyframes button {
+    0% {
+    box-shadow: 0 0 0 0 var(--hover);
+    
+    }
+}
+
+
